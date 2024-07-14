@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .parent{
+            color: white;
+            border: 2px solid yellow;
+            padding: 10px;
+            display: flex;
+            height: 200px;
+            /* align-items: center;
+            justify-content: space-around; */
+            flex-direction: column;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+            font-size: 20px;
+        }
+        .child-1{
+            background-color: aqua;
+            /* padding: 10px; */
+            order: 5;
+        }
+        .child-2{
+            background-color: rgb(204, 0, 255);
+        }
+        .child-3{
+            background-color: rgb(255, 0, 179);
+        }
+        .child-4{
+            background-color: rgb(0, 255, 34);
+        }
+        .child-5{
+            background-color: rgb(255, 81, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+        <div class="child-4">4</div>
+        <div class="child-5">5</div>
+    </div>
+
+    <ul>
+        <li>align items working vertical</li>
+        <li>default flex direction row</li>
+        <li>justify content working main axis means x axis</li>
+        <li>align items working cross axis means y axis</li>
+    </ul>
+</body>
+</html>
